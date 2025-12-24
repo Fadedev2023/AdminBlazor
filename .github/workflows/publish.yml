@@ -20,7 +20,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Pack
-        run: dotnet pack AdminBlazor/AdminBlazor.csproj -c Release -o out
+        run: dotnet pack AdminBlazor/AdminBlazor.csproj -c Release -o ${{ github.workspace }}/out
 
       - name: Push to GitHub Packages
-        run: dotnet nuget push out/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/Fadedev2023/index.json" --skip-duplicate
+        run: dotnet nuget push ${{ github.workspace }}/out/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/Fadedev2023/index.json" --skip-duplicate

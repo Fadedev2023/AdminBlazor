@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.AssemblyInfo.cs
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AdminBlazor\AdminBlazor\AdminBlazor\obj\Debug\net10.0\AdminBlazor.sourcelink.json

@@ -1,14 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
 
-  <ItemGroup>
-    <PackageReference Include="Blazorized.AdminLte" Version="0.1.8" />
-    <PackageReference Include="Blazorized.AdminLte.Content" Version="3.0.7" />
-  </ItemGroup>
+        <PackageId>AdminBlazor</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Fadedev2023</Authors>
+        <Company>Fadedev2023</Company>
+        <Description>Biblioteca de componentes UI para portais SGA.</Description>
+        <RepositoryUrl>https://github.com/Fadedev2023/AdminBlazor</RepositoryUrl>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <SupportedPlatform Include="browser" />
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Blazorized.AdminLte" Version="0.1.8" />
+        <PackageReference Include="Blazorized.AdminLte.Content" Version="3.0.7" />
+    </ItemGroup>
 
 </Project>

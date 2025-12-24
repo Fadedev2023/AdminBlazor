@@ -20,7 +20,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Pack
-        run: dotnet pack AdminBlazor/AdminBlazor.csproj -c Release -o ${{ github.workspace }}/out
+        run: dotnet pack AdminBlazor/AdminBlazor.csproj -c Release
 
       - name: Push to GitHub Packages
-        run: dotnet nuget push ${{ github.workspace }}/out/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/Fadedev2023/index.json" --skip-duplicate
+        shell: pwsh
+        run: |
+          $package = Get-ChildItem -Path "AdminBlazor/bin/Release/*.nupkg" -Recurse | Select-Object -First 1 -ExpandProperty FullName
+          dotnet nuget push $package --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/Fadedev2023/index.json" --skip-duplicate
